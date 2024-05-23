@@ -12,11 +12,18 @@
 }
 
 header {
+  transition: background-color 0.3s;
   background-color: #ffffffcc;
   display: flex;
+  width: 100%;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
 }
+header:hover {
+  background-color: #fff;
+}
+
 header > div > h1 {
   color: #0026b1;
 }
@@ -37,7 +44,7 @@ header > div > ul > li > a {
 }
 
 div#Home {
-  padding: 75px 60px 380px 60px;
+  padding: 150px 60px 380px 60px;
 }
 div#Home > .presentation {
   background-color: #fff;
@@ -177,6 +184,13 @@ div#Contacts > form > input {
 div#Contacts > form > div {
   display: flex;
   gap: 30px;
+}
+div#Contacts > form > select {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: 1px lightgray solid;
 }
 div#Contacts > form > textarea {
   font-size: inherit;
