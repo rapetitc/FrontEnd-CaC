@@ -6,7 +6,7 @@
 }
 
 #main {
-  background-image: url("./FrontEnd-CaC/assets/home-bg.jpeg");
+  background-image: url("/FrontEnd-CaC/assets/home-bg.jpeg");
   background-color: black;
   background-attachment: fixed;
 }
