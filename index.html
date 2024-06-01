@@ -1,58 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LunaTV</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/pc.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div id="main">
-      <header>
-        <div><h1>LunaTV</h1></div>
+    <main id="home">
+      <header id="header">
         <div>
-          <ul>
-            <li><a href="#Home">Inicio</a></li>
-            <li><a href="#Plans">Planes</a></li>
-            <li><a href="#FaQs">Preguntas Frecuentes</a></li>
-            <li><a href="#Contacts">Contacto</a></li>
-          </ul>
+          <div class="menu-toggle" id="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </div>
+          <div class="logo">
+            <img src="/assets/logo.png" alt="Logo" />
+            <h1>LunaTV</h1>
+          </div>
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#plans">Planes</a></li>
+              <li><a href="#faqs">Preguntas Frecuentes</a></li>
+              <li><a href="#contacts">Contacto</a></li>
+            </ul>
+          </div>
         </div>
       </header>
-      <div id="Home">
-        <div class="presentation">
-          <p>Tus historias favoritas,<br />todas en un mismo lugar.</p>
-          <a href="#Plans">Ver Planes</a>
-        </div>
+      <div class="presentation">
+        <p>Tus historias favoritas,<br />todas en un mismo lugar.</p>
+        <a href="#plans">Ver planes</a>
       </div>
-    </div>
-    <div id="Plans">
-      <div class="card">
-        <h3>Plus</h3>
-        <p>AR$ 1500</p>
-        <div class="benefits">
-          <p>Hasta 2 pantallas en simultaneo</p>
-          <p>Resoluciones HD, QHD</p>
-          <p>Contenido exclusivo</p>
-          <p>Disponible sin Conexion</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Premium</h3>
-        <p>AR$ 2500</p>
-        <div class="benefits">
-          <p>Hasta 2 pantallas en simultaneo</p>
-          <p>Resoluciones HD, QHD</p>
-          <p>Contenido exclusivo</p>
-          <p>Disponible sin Conexion</p>
-        </div>
-      </div>
-    </div>
-    <div id="FaQs">
+    </main>
+    <div id="plans">
       <div class="container">
-        <h2>Tenes alguna duda?<br /><span>Aqui algunas preguntas y respuestas frecuente</span></h2>
+        <div class="title">
+          <h2>Nuestros planes</h2>
+          <p>Los mejores ajustados a tu bolsillo.</p>
+        </div>
+        <div class="plans-container">
+          <div class="card">
+            <h3>Plus</h3>
+            <p>AR$ 1500</p>
+            <div class="benefits">
+              <p>Hasta 2 pantallas en simultaneo</p>
+              <p>Resoluciones hasta QHD</p>
+              <p>Contenido exclusivo</p>
+              <p>Disponible sin Conexion</p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Premium</h3>
+            <p>AR$ 2500</p>
+            <div class="benefits">
+              <p>Hasta 4 pantallas en simultaneo</p>
+              <p>Resoluciones hasta 4K</p>
+              <p>Contenido exclusivo</p>
+              <p>Disponible sin Conexion</p>
+              <p>Lanzamientos exclusivos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="faqs">
+      <div class="container">
+        <div class="title">
+          <h2>¿Tienes alguna dudas?</h2>
+          <p>Aqui algunas preguntas y respuestas frecuente.</p>
+        </div>
         <div class="faq">
-          <p>Primera pregunta?</p>
+          <p>¿El contenido renueva frecuentemente?</p>
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -60,7 +87,7 @@
           </button>
         </div>
         <div class="faq">
-          <p>Primera pregunta?</p>
+          <p>¿Puedo solicitar contenido nuevo?</p>
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -68,7 +95,7 @@
           </button>
         </div>
         <div class="faq">
-          <p>Primera pregunta?</p>
+          <p>¿Se puede ver sin conexion?</p>
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -76,7 +103,7 @@
           </button>
         </div>
         <div class="faq">
-          <p>Primera pregunta?</p>
+          <p>¿Habra disponibilidad de resolucion 8k en el futuro?</p>
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -85,24 +112,49 @@
         </div>
       </div>
     </div>
-    <div id="Contacts">
-      <h2>¿Aún no vez el contenido que desea disponible en nuestro servicio?<br />Sugiérenos que agregar, lo tendremos en cuenta.</h2>
-      <form>
-        <input type="file" accept="image/*" name="portrait" />
-        <input type="text" name="title" placeholder="Titulo" />
-        <select name="gender" id="gender">
-          <option value="action">Accion</option>
-          <option value="terror">Terror</option>
-        </select>
-        <div>
-          <div><input type="radio" name="type" id="movie" /> <label for="movie">Pelicula</label></div>
-          <div><input type="radio" name="type" id="serie" /> <label for="serie">Series</label></div>
+    <div id="contacts">
+      <div class="container">
+        <div class="title">
+          <h2>¿Quisieras hacer una consulta?</h2>
+          <p>Contactanos, estaremos atentos a tus inquietudes.</p>
         </div>
-        <textarea name="comment" id="comment" placeholder="Comentario"></textarea>
-        <div><input type="checkbox" name="tac" id="tac" /> <label for="tac">Acepto los terminos y condicionoes</label></div>
-        <button>Solicitar</button>
-      </form>
+        <form id="contact-form">
+          <div class="file-group">
+            <p>Portada:</p>
+            <input type="file" accept="image/*" name="portrait" id="portrait" />
+            <label for="portrait">Subir archivo</label>
+            <div>
+              <p>file_name</p>
+              <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="input-group">
+            <p>Titulo:</p>
+            <input type="text" name="title" placeholder="Titulo" />
+          </div>
+          <div class="select-group">
+            <p>Genero:</p>
+            <select name="gender" id="gender" class="select-group">
+              <option value="action">Accion</option>
+              <option value="terror">Terror</option>
+            </select>
+          </div>
+          <div class="text-group">
+            <p>Comentario:</p>
+            <textarea name="comment" id="comment" placeholder="Comentario"></textarea>
+          </div>
+          <div class="tac"><input type="checkbox" name="tac" id="tac" /> <label for="tac">Acepto los terminos y condicionoes</label></div>
+          <button type="submit">Solicitar</button>
+        </form>
+      </div>
     </div>
+    <div class="separator"></div>
     <footer>
       <div>
         <p>Terminos de uso</p>
@@ -112,5 +164,6 @@
         <p>Ayuda</p>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

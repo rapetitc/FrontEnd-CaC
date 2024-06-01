@@ -1,0 +1,299 @@
+main {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.8) 65%,
+      rgba(255, 255, 255, 0.7) 80%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("/assets/home-bg.jpeg");
+  background: -webkit-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.8) 65%,
+      rgba(255, 255, 255, 0.7) 80%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("/assets/home-bg.jpeg");
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.8) 65%,
+      rgba(255, 255, 255, 0.7) 80%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("/assets/home-bg.jpeg");
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  background-attachment: fixed;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+}
+
+header > div.fixed {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 10px black;
+}
+header > div {
+  position: static;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-toggle {
+  position: absolute;
+  z-index: 10;
+  margin: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: rgb(170, 170, 170);
+}
+
+.logo {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 15px 10px;
+}
+.logo > img {
+  width: 40px;
+}
+.logo > h1 {
+  font-size: 26px;
+  color: var(--text-color-darkblue);
+}
+
+.menu {
+  position: absolute;
+  top: -242px;
+  left: 0px;
+  width: 100%;
+  padding-top: 70px;
+  background-color: white;
+  transition: top 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.menu.active {
+  top: calc(0px);
+}
+.menu > ul {
+  border-top: 1px solid rgba(170, 170, 170, 0.1);
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  padding: 20px;
+  list-style: none;
+}
+.menu > ul > li {
+  padding: 5px 10px;
+}
+.menu > ul > li > a {
+  font-weight: bolder;
+  text-shadow: 0px 0px 20px #fff;
+  text-decoration: none;
+  color: #142255;
+}
+
+.presentation {
+  display: flex;
+  align-items: end;
+  flex-flow: column;
+  width: 100%;
+  padding: 180px 40px;
+}
+
+.presentation > p {
+  width: max-content;
+  color: var(--text-color-darkblue);
+  font-size: 28px;
+  text-align: end;
+}
+.presentation > a {
+  width: max-content;
+  text-align: center;
+  margin: 25px 0;
+  background-color: #446dff;
+  border: 1px lightgray solid;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px 40px;
+  font-size: 22px;
+}
+
+div#plans {
+  padding: 100px 20px 30px 20px;
+}
+
+div#plans > div.container > div.title > * {
+  padding: 5px 30px;
+  color: var(--text-color-darkblue);
+  text-align: end;
+}
+div#plans > div.container > div.title > p {
+  font-size: 22px;
+}
+div#plans > div.container > div.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 30px;
+}
+div#plans > div.container > div.plans-container > div.card {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  background-color: #446dff;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+div#plans > div.container > div.plans-container > div.card > h3 {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 24px;
+}
+div#plans > div.container > div.plans-container > div.card > p {
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+
+div#plans > div.container > div.plans-container > div.card > div.benefits {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  font-size: 16px;
+  color: #142255;
+  background-color: aliceblue;
+  height: 100%;
+  padding: 20px 15px;
+  border-radius: 10px;
+  text-align: end;
+}
+div#plans > div.container > div.plans-container > div.card > div.benefits > p {
+  padding: 5px 8px;
+}
+div#plans > div.container > div.plans-container > div.card > div.benefits > p:nth-child(even) {
+  background-color: rgba(238, 238, 238, 0.8);
+}
+
+div#faqs {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px 0px 20px;
+}
+div#faqs > div.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+div#faqs > div.container > div.title {
+  width: 100%;
+}
+div#faqs > div.container > div.title > * {
+  padding: 5px 30px;
+  color: var(--text-color-darkblue);
+  text-align: end;
+}
+div#faqs > div.container > div.title > p {
+  font-size: 22px;
+}
+div#faqs > div.container > div.faq {
+  display: flex;
+  justify-content: space-between;
+  background-color: #142255;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 7px;
+  padding: 15px;
+  width: 100%;
+}
+div#faqs > div.container > div.faq > p {
+  margin-left: 20px;
+}
+div#faqs > div.container > div.faq > button {
+  cursor: pointer;
+  width: 32px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+div#contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 100px 20px 0px 20px;
+}
+div#contacts > div.container > div.title {
+  width: 100%;
+}
+div#contacts > div.container > div.title > * {
+  padding: 5px 30px;
+  color: var(--text-color-darkblue);
+  text-align: end;
+}
+div#contacts > div.container > div.title > p {
+  font-size: 22px;
+}
+div#contacts > div.container > form {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+div#contacts > div.container > form > div.tac {
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+div#contacts > div.container > form > div.tac > label {
+  cursor: pointer;
+}
+
+div#contacts > div.container > form > button {
+  font-size: inherit;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px lightgray solid;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color: #446dff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer > div {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: max-content;
+}

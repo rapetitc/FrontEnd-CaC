@@ -1,0 +1,158 @@
+:root {
+  --text-color-darkblue: #283461;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 810px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 75%;
+  }
+}
+
+.separator {
+  height: 70px;
+  width: 100%;
+}
+
+/* 
+STYLE COMPONENTS - STYLE COMPONENTS - STYLE COMPONENTS - STYLE COMPONENTS
+*/
+
+/* File Group  */
+.file-group {
+  display: flex;
+  flex: 1 0 auto;
+  flex-basis: content;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: inherit;
+  border-bottom: 1px lightgray solid;
+}
+.file-group > p {
+  padding: 0px 5px;
+}
+.file-group > input {
+  display: none;
+}
+.file-group > label {
+  text-decoration: underline lightgray;
+  cursor: pointer;
+}
+.file-group > div {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.file-group > div > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.file-group > div > button {
+  display: flex;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Input Group  */
+.input-group {
+  display: flex;
+  font-size: inherit;
+  width: 100%;
+  border-bottom: 1px lightgray solid;
+  padding: 8px 10px;
+}
+.input-group > p {
+  padding: 0px 5px;
+}
+.input-group > input {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+}
+
+/* Select Group  */
+.select-group {
+  display: flex;
+  border-bottom: 1px lightgray solid;
+  padding: 8px 10px;
+}
+.select-group > p {
+  padding: 0px 5px;
+}
+
+.select-group > select {
+  width: 100%;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Radio Group  */
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 10px;
+  border-bottom: 1px lightgray solid;
+}
+.radio-group > p {
+  padding: 0px 5px;
+}
+.radio-group > input {
+  display: none;
+}
+.radio-group > div {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 5px;
+}
+.radio-group > div > * {
+  cursor: pointer;
+}
+
+/* Text Group  */
+.text-group {
+  display: flex;
+  flex-flow: column;
+  padding: 8px 10px;
+  border-bottom: 1px lightgray solid;
+}
+.text-group > p {
+  position: relative;
+  float: left;
+  padding: 0px 5px;
+}
+.text-group > textarea {
+  font-size: inherit;
+  padding: 2px 5px;
+  resize: none;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}

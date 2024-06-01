@@ -1,0 +1,11 @@
+@media (min-width: 810px) {
+  .presentation {
+    padding: 180px 100px;
+  }
+  .presentation > p {
+    font-size: 32px;
+  }
+  .presentation > a {
+    font-size: 26px;
+  }
+}
